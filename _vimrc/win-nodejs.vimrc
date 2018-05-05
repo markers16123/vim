@@ -66,6 +66,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'moll/vim-node'
 Plugin 'tpope/vim-repeat'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'plasticboy/vim-markdown'
 
 "
 " [ Linter ]
