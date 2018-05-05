@@ -14,7 +14,7 @@ Plugin 'tpope/vim-surround'
 convert surround
 
 | before | keys | after |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | `"`Hello World!`"` | `cs"[` | `[ `Hello World!` ]` |
 | `"`Hello World!`"` | `cs"<p>` | `<p>`Hello World`</p>` |
 | `<p>`Hello World!`</p>` | `cst"` | `"`Hello World!`"` |
@@ -24,7 +24,7 @@ convert surround
 delete surround
 
 | before | keys | after |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | `"`Hello World!`"` | `dw"` | Hello World! |
 | `<p>`Hello World!`</p>` | `dwt` | Hello World |
 
@@ -35,7 +35,7 @@ delete surround
 `t` is tag
 
 | before | keys | after |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Hello World! | `ysiw"` | `"`Hello`"` World! |
 | Hello World! | `ysiwb` | `(`Hello`)` World! |
 | Hello World! | `ysiw<span>` | `<span>`Hello`</span>` World! |
@@ -43,14 +43,14 @@ delete surround
 ### yss
 
 | before | keys | after |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Hello World! | `yss"` | `"`Hello World!`"` |
 | Hello World! | `yssb` | `(`Hello World!`)` |
 | Hello World! | `yss<span>` | `<span>`Hello World!`</span>` |
 
 ### S
 | before | keys | after |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Hello World! | `veeS"` | Hello "World!" |
 | Hello World! | `VS<div class="container">` | `<div class="container">`<br>Hello World!<br>`</div>` |
 
