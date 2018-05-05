@@ -51,8 +51,8 @@ delete surround
 ### S
 | before | keys | after |
 | --- | --- | --- |
-| Hello World! | `veeS"` | Hello "World!" |
-| Hello World! | `VS<div class="container">` | `<div class="container">`<br>Hello World!<br>`</div>` |
+| Hello World! | `vee``S"` | Hello "World!" |
+| Hello World! | `V``S<div class="container">` | `<div class="container">`<br>Hello World!<br>`</div>` |
 
 
 커서가 있는 단어 앞 뒤에 문자 또는 태그를 삽입한다.
