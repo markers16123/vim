@@ -25,8 +25,8 @@ delete surround
 
 | before | keys | after |
 | --- | --- | --- |
-| `"`Hello World!`"` | `dw"` | Hello World! |
-| `<p>`Hello World!`</p>` | `dwt` | Hello World |
+| `"`Hello World!`"` | `ds"` | Hello World! |
+| `<p>`Hello World!`</p>` | `dst` | Hello World |
 
 ### ysiw
 
