@@ -38,6 +38,7 @@ set t_Co=256         " 색 조정
 " hi cursorline ctermfg=White ctermbg=gray cterm=bold guifg=white guibg=gray gui=bold
 " hi CursorColumn ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
 set equalalways	     " Split 화면 크기를 항상 동일하게 유지
+set backspace=indent,eol,start " Allow backword-deletion
 
 " -------------------------------------------------------------
 " Select Color Cheme 
@@ -63,6 +64,9 @@ Plugin 'VundleVim/Vundle.vim'
 " `Node.vim` Tools and utilities to make Vim superb for developing with
 " Node.js Like Rails.vim for Ruby on Rails.
 Plugin 'moll/vim-node'
+Plugin 'tpope/vim-repeat'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'plasticboy/vim-markdown'
 
 "
 " [ Linter ]
@@ -82,7 +86,7 @@ Plugin 'juvenn/mustache.vim'
 
 "
 " [ Editing ]
-" surround
+Plugin 'tpope/vim-surround'
 " tComment auto comment
 " NERD_Commenter auto comment
 " JavaScriptIndent web-indent - Javascript indenter (HTML indent is included) [somewhat buggy, clicking tab won't indent]
