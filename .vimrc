@@ -1,7 +1,6 @@
 " -------------------------------------------------------------
 " Plugins
 " -------------------------------------------------------------
-
 " set the runtime path to include Vundle and initialize
 " Install Plugins: :PluginInstall
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -16,12 +15,33 @@ Plugin 'tpope/vim-repeat'
 Plugin 'L9' " Vim-script library, which provides some utility functions and
 Plugin 'easymotion/vim-easymotion'
 
-
 " https://github.com/nodejs/node/wiki/Vim-Plugins
 "
 " [ Languages Specific ]
 " `Node.vim` Tools and utilities to make Vim superb for developing with Node.js Like Rails.vim for Ruby on Rails.
 Plugin 'moll/vim-node'
+
+"
+" [ Linter ]
+" Tabular Align declarations, equals signs, etc.
+Plugin 'godlygeek/tabular'
+" JSLint Lint your code from Vim
+Plugin 'hallettj/jslint.vim'
+" JSHint JSHint plugin
+Plugin 'walm/jshint.vim'
+
+"
+" [ Synctax ]
+" javascript
+Plugin 'pangloss/vim-javascript' " indentation + syntax
+Plugin 'jelera/vim-javascript-syntax' " More complete syntax than the one above
+Plugin 'kchmck/vim-coffee-script'
+" pug view engine
+Plugin 'digitaltoad/vim-pug'
+" styles
+Plugin 'wavded/vim-stylus' " Sytax highlighting for Stylus.
+Plugin 'vim-syntastic/syntastic'
+Plugin 'juvenn/mustache.vim'
 " Markdown Syntax Plugin
 Plugin 'plasticboy/vim-markdown'
 " NSIS Syntax Highlighting Plugin
@@ -29,22 +49,9 @@ Plugin 'vim-scripts/NSIS-syntax-highlighting' " by Chris Morgan
 " PowerShell Synctax Plugin
 Plugin 'pprovost/vim-ps1' " by Peter Provost
 au BufNewFile,BufRead *.ps1,*.psm1,*.psc1 setf ps1
-
-"
-" [ Linter ]
-" Tabular Align declarations, equals signs, etc.
-" JSLint Lint your code from Vim
-" JSHint JSHint plugin
-
-"
-" [ Synctax ]
-Plugin 'pangloss/vim-javascript' " indentation + syntax
-Plugin 'jelera/vim-javascript-syntax' " More complete syntax than the one above
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'digitaltoad/vim-pug'
-Plugin 'wavded/vim-stylus' " Sytax highlighting for Stylus.
-Plugin 'vim-syntastic/syntastic'
-Plugin 'juvenn/mustache.vim'
+" Vue.js
+Plugin 'posva/vim-vue'
+let g:vue_disable_pre_processors=1
 
 "
 " [ Editing ]
@@ -92,8 +99,6 @@ endfunction
 " vim-nodejs-complete (local completion) This is a fork of 'vim-nodejs-complete' that adds local module completion by searching through the 'node_modules' directory/subdirectories and processing the .js and package.json files.
 " tern_for_vim gives a more sophisticated omnifunc function than vim-nodejs-complete
 Plugin 'valloric/youcompleteme'
-
-
 
 " [ Browsing ]
 " Command-T TextMate-like Command-T explorer. Find files by pattern
@@ -226,3 +231,4 @@ inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
+
