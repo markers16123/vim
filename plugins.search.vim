@@ -8,6 +8,7 @@
   let g:ctrlp_map='<c-p>'
   " Change default command
   let g:ctrlp_cmd='CtrlP'
+  let g:ctrlp_custom_ignore = 'plugged\|node_modules\|DS_Store\|git'
 "" }}}
 
 "" Plugin: Fzf {{{
