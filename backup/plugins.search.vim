@@ -15,7 +15,6 @@
   " Full path fuzzy file, buffer, mru, tag finder for Vim
   " A general-purpose command-line fuzzy finder
   Plug 'junegunn/fzf', { 'do': 'yes \| ./install --all --no-update-rc' }
-  Plug 'junegunn/fzf.vim'
 "" }}}
 
 "" Plugin: Easymotion {{{
@@ -59,10 +58,6 @@
   Plug 'majutsushi/tagbar'
   " Map TagbarToggle to <F10>
   nnoremap <silent> <F10> :TagbarToggle<CR>
-  " [NOTE] When i get this error 'Ctags doesn't seem to be Exuberant Ctags'
-  " execute a command 'brew install ctags-exuberant'
-  " then, add in .vimrc 'let
-  " g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags''
 "" }}}
 
 "" Plugin: NERDTree {{{

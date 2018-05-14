@@ -132,7 +132,7 @@ endif
     set grepprg=pt\ --nocolor\ --nogroup\ --column
   elseif executable('ag')
     " Use ag(The Silver Searcher)
-    set grepprg=Ag\ --vimgrep
+    set grepprg=ag\ --vimgrep
   elseif executable('ack')
     set grepprg=ack\ -H\ --nocolor\ --nogroup
   endif
