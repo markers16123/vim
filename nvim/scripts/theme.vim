@@ -13,8 +13,11 @@ endif
 " Set to 'light' to use colors that look good on a light background
 " set background=dark
 " Set colorscheme
-" colorscheme summerfruit25
+" clorscheme summerfruit25
 " colorscheme gruvbox
+" colorscheme onehalflight
+colorscheme onehalfdark
+" colorscheme wombat
 " colorscheme seoul256-light
 " colorscheme molokai
-color dracula
+" color dracula

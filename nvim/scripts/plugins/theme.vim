@@ -22,7 +22,7 @@
   " Change lightmode contrast. Possible values are `soft`, `medium`, `hard`
   let g:gruvbox_contrast_light='hard'
   " Change cursor background
-  let g:gruvbox_hls_cursor='green'
+  let g:gruvbox_hls_cursor='red'
   " Inverts indent guides
   let g:gruvbox_invert_indent_guides=0
 "" }}}
@@ -43,4 +43,9 @@
 "" }}}
 "" Theme: dracula {{{
   Plug 'dracula/vim', { 'as': 'dracula' }
+"" }}}
+"" Theme: onehalf {{{
+  Plug 'sonph/onehalf', {'rtp': 'vim/'}
+  " let g:airline_theme='onehalfdark'
+  " let g:lightline.colorscheme='onehalfdark'
 "" }}}

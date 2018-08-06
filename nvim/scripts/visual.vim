@@ -29,6 +29,8 @@ if exists('+colorcolumn')
 endif
 " Highlight current line
 set cursorline
+" highlight current column
+set cursorcolumn 
 " Show cursorline for active window only
 augroup highlight_active_window
   autocmd!
