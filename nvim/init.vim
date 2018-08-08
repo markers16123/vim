@@ -9,10 +9,6 @@ endif
 if filereadable(expand('$VIM_SCRIPTS/key-mapping.vim'))
   source $VIM_SCRIPTS/key-mapping.vim
 endif
-if filereadable(expand('$VIM_SCRIPTS/visual.vim'))
-  source $VIM_SCRIPTS/visual.vim
-endif
-
 
 """ Plugin Configuration
 " All the vim plugins are managed by 'vim-plug'
@@ -44,4 +40,8 @@ endif
 " Use local vimrc if available
 if filereadable(expand('$HOME/.vimrc.local'))
   source $HOME/.vimrc.local
+endif
+
+if filereadable(expand('$VIM_SCRIPTS/visual.vim'))
+  source $VIM_SCRIPTS/visual.vim
 endif

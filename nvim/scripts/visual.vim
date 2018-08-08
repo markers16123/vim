@@ -28,7 +28,8 @@ if exists('+colorcolumn')
   highlight ColorColumn ctermbg=gray
 endif
 " Highlight current line
-set cursorline
+" set cursorline
+hi CursorLine gui=underline cterm=underline ctermfg=None guifg=None
 " highlight current column
 set cursorcolumn 
 " Show cursorline for active window only

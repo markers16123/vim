@@ -12,6 +12,7 @@ let plugins_enabled = [
 \   'langs.html',
 \   'langs.js',
 \   'completion',
+\   'visual',
 \ ]
 
 for plugin in plugins_enabled

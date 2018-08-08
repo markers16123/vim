@@ -75,6 +75,8 @@
   let NERDTreeIgnore=['.o$','.pyc$']
   " Show hidden files
   let NERDTreeShowHidden=1
+  let g:NERDTreeDirArrowExpandable = '+'
+  let g:NERDTreeDirArrowCollapsible = '-'
   " Automatically open NERDTree when vim start up with no files
   " autocmd StdinReadPre * let s:std_in=1
   " autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
